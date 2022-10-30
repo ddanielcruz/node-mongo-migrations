@@ -1,5 +1,12 @@
 {
   "name": "mongo-migrations",
   "version": "1.0.0",
-  "scripts": {}
+  "scripts": {
+    "db:migrate": "npx migrate-mongo up",
+    "db:revert": "npx migrate-mongo down"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "migrate-mongo": "^9.0.0"
+  }
 }
